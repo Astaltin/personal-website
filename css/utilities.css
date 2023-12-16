@@ -1,0 +1,30 @@
+/*====================*
+    UTILITIES
+ *====================*/
+.layout {
+    --padding-inline: .938rem;
+    --content-min-width: calc(100% - var(--padding-inline) * 2);
+    --content-max-width: 62.5rem;
+
+    display: grid;
+    grid-template-columns: 
+        [full-width-start] minmax(var(--padding-inline), 1fr)
+        [content-start] min(var(--content-min-width), var(--content-max-width)) [content-end]
+        minmax(var(--padding-inline), 1fr) [full-width-end];
+    row-gap: var(--row-gap);
+}
+
+.layout > :not(.full-width, .full-width-content),
+.full-width-content > :not(.full-width, .full-width-content) {
+    grid-column: content;
+}
+
+.full-width {
+    grid-column: full-width;
+}
+
+.full-width-content {
+    grid-column: full-width;
+    display: inherit;
+    grid-template-columns: inherit;
+}

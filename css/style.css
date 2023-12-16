@@ -1,0 +1,60 @@
+@import url('base.css');
+@import url('layout.css');
+@import url('utilities.css');
+@import url('components.css');
+
+.primary-header, .primary-footer, 
+.secondary-header, .secondary-footer {
+    color: var(--clr-secondary);
+}
+
+.primary-header {
+    background-image: url('../images/ocean-live-675.svg');
+}
+
+.secondary-header {
+    background-image: url('../images/ocean-live-150.svg');
+}
+
+.primary-main > .layout > .section-highlight {
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.section-highlight > .button {
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+}
+
+.primary-main > .layout > .profile::before {
+    border-radius: var(--rounded-medium);
+    background-color: var(--clr-primary);
+}
+
+.profile > .profile__title {
+    color: var(--clr-neutral-100);
+}
+
+.profile > img {
+    border-radius: var(--rounded);
+}
+
+.profile > .profile__info > ul {
+    font-style: oblique;
+}
+
+.profile a {
+    text-decoration: underline;
+}
+
+.gallery {
+    border-radius: var(--rounded);
+}
+
+.gallery > div > img {
+    border-radius: var(--rounded);
+}
+
+.primary-footer {
+    background-image: url('../images/ocean-live-350.svg');
+}

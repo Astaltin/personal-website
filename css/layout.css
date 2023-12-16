@@ -1,0 +1,103 @@
+.primary-header, .primary-footer, 
+.secondary-header, .secondary-footer {
+    background-position-x: center;
+}
+
+.primary-header {
+    --row-gap: 6.25rem;
+}   
+
+.landing {
+    text-align: center;
+    padding-bottom: 21.134rem;
+}
+
+.primary-main > .layout {
+    --row-gap: 6.25rem;
+    padding-block: var(--row-gap);
+}
+
+.primary-main > .layout > .section-highlight {
+    padding-block: 6.25rem;
+}
+
+.primary-main > .layout > .profile {
+    position: relative;
+    display: grid;
+    grid-template-columns: 17.5rem;
+    grid-template-areas: 
+        'image heading'
+        'image paragraph'
+        'info paragraph';
+    gap: .938rem;
+}
+
+.primary-main > .layout > .profile::before {
+    grid-row: 1 / 2;
+    position: absolute;
+    inset: -.625rem;
+    z-index: -1;
+    content: '';
+}
+
+.primary-main > .layout > section:not(.gallery) > :not(.button) {
+    max-width: 60ch;
+}
+
+.primary-main > .layout > section:not(.profile, .gallery) > :not(:last-child) {
+    padding-bottom: 1.25rem;
+}
+
+.profile section > h3,
+.profile section > p:not(:last-of-type) {
+    padding-bottom: .938rem;
+}
+
+.profile > .profile__title {
+    grid-area: heading;
+}
+
+.profile > .profile__paragraph {
+    grid-area: paragraph;
+}
+
+.profile > .profile__paragraph > section:not(:last-of-type) {
+    margin-block: .938rem;
+}
+
+.profile > img {
+    grid-area: image;
+    width: 100%;    
+}
+
+.profile > .profile__info {
+    grid-area: info;
+}
+
+.gallery {
+    --item-gap: .625rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--item-gap);
+}
+
+.gallery > div {
+    flex: 1 1 calc((var(--content-max-width) - (var(--item-gap) * 2))  / 3);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--item-gap);
+}
+
+.gallery > div > img {
+    flex: auto;
+
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.primary-footer {
+    height: 21.875rem;
+}
