@@ -26,19 +26,6 @@
     --clr-neutral-900: #000;
 }
 
-@media only screen and (max-width: 738px) {
-    html {
-        font-size: 88.5%;
-    }
-    
-}
-
-@media only screen and (max-width: 386px) {
-    html {
-        font-size: 79%;
-    }   
-}
-
 /*====================*
     RESETS
  *====================*/
