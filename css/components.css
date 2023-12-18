@@ -16,7 +16,11 @@
     NAVIGATION
  *====================*/
 .primary-nav {
-    padding-block: 1.875rem 5rem;
+    padding-block: 1.875rem 2.009rem;
+}
+
+.secondary-header > .primary-nav {
+    padding-block: 1.875rem 1.063rem;
 }
 
 .primary-nav > ul {
@@ -30,4 +34,39 @@
 .primary-nav > ul > li {
     font-weight: var(--fw-700);
     text-transform: uppercase;
+}
+
+/*====================*
+    FOOTER
+ *====================*/
+.primary-footer {
+    background-color: var(--clr-primary);
+}
+
+.primary-footer h2 {
+    font-size: var(--fs-small);
+    line-height: inherit;
+    text-transform: uppercase;
+}
+
+.primary-footer p {
+    font-size: var(--fs-small);
+}
+
+.primary-footer > :not(.full-width) {
+    display: grid;
+    grid-template-areas: 
+        "contact ."
+        "contact copyright";
+    padding-block: 5.938rem 1.875rem;
+}
+
+.contact-section {
+    grid-area: contact;
+    width: fit-content;
+}
+
+.copyright-text {
+    grid-area: copyright;
+    justify-self: flex-end;
 }

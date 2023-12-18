@@ -8,12 +8,14 @@
     color: var(--clr-secondary);
 }
 
-.primary-header {
+.primary-header,
+.secondary-header {
     background-color: var(--clr-primary);
 }
 
-.secondary-header {
-    background-image: url('../images/ocean-live-150.svg');
+.primary-header::after,
+.secondary-header::after {
+    background-color: var(--clr-secondary);
 }
 
 .primary-main > .layout > .section-highlight {
@@ -53,8 +55,4 @@
 
 .gallery > div > img {
     border-radius: var(--rounded);
-}
-
-.primary-footer {
-    background-image: url('../images/ocean-live-350.svg');
 }
