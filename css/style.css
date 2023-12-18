@@ -9,7 +9,7 @@
 }
 
 .primary-header {
-    background-image: url('../images/ocean-live-675.svg');
+    background-color: var(--clr-primary);
 }
 
 .secondary-header {

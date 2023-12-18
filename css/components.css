@@ -15,11 +15,11 @@
 /*====================*
     NAVIGATION
  *====================*/
-.nav {
+.primary-nav {
     padding-block: 1.875rem 5rem;
 }
 
-.nav__links {
+.primary-nav > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +27,7 @@
     gap: .938rem 3.75rem;   
 }
 
-.nav__link {
+.primary-nav > ul > li {
     font-weight: var(--fw-700);
     text-transform: uppercase;
 }
