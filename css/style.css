@@ -28,20 +28,20 @@
     color: var(--clr-primary);
 }
 
-.primary-main > .layout > .profile::before {
+.profile::before {
     border-radius: var(--rounded-medium);
     background-color: var(--clr-primary);
 }
 
-.profile > .profile__title {
+.profile__title {
     color: var(--clr-neutral-100);
 }
 
-.profile > img {
+.profile__info > img {
     border-radius: var(--rounded);
 }
 
-.profile > .profile__info > ul {
+.profile__info > ul {
     font-style: oblique;
 }
 

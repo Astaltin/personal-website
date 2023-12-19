@@ -42,10 +42,10 @@
 .profile {
     position: relative;
     display: grid;
-    grid-template-columns: 17.5rem;
+    grid-template-columns: [info-start] 17.5rem [info-end];
+    grid-template-rows: minmax(57.2333px, auto);
     grid-template-areas: 
-        'image heading'
-        'image paragraph'
+        'info heading'
         'info paragraph';
     gap: .938rem;
 }
@@ -63,25 +63,25 @@
     padding-bottom: .938rem;
 }
 
-.profile > .profile__title {
+.profile__title {
     grid-area: heading;
 }
 
-.profile > .profile__paragraph {
+.profile__paragraph {
     grid-area: paragraph;
 }
 
-.profile > .profile__paragraph > section:not(:last-of-type) {
+.profile__paragraph > section:not(:last-of-type) {
     margin-block: .938rem;
 }
 
-.profile > img {
-    grid-area: image;
-    width: 100%;    
+.profile__info {
+    grid-area: info;
 }
 
-.profile > .profile__info {
-    grid-area: info;
+.profile__info > img {
+    width: 100%;    
+    margin-bottom: .938rem;
 }
 
 .gallery {
