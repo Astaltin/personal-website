@@ -31,15 +31,7 @@
     padding-block: 6.25rem;
 }
 
-.primary-main > .layout > section:not(.gallery) > :not(.button) {
-    max-width: 60ch;
-}
-
-.primary-main > .layout > section:not(.profile, .gallery) > :not(:last-child) {
-    padding-bottom: 1.25rem;
-}
-
-.profile {
+.primary-main > .layout > .profile {
     position: relative;
     display: grid;
     grid-template-columns: [info-start] 17.5rem [info-end];
@@ -50,12 +42,20 @@
     gap: .938rem;
 }
 
-.profile::before {
+.primary-main > .layout > .profile::before {
     grid-row: 1 / 2;
     position: absolute;
     inset: -.625rem;
     z-index: -1;
     content: '';
+}
+
+.primary-main > .layout > section:not(.gallery) > :not(.button) {
+    max-width: 60ch;
+}
+
+.primary-main > .layout > section:not(.profile, .gallery) > :not(:last-child) {
+    padding-bottom: 1.25rem;
 }
 
 .profile section > h3,
