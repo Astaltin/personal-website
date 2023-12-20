@@ -2,7 +2,7 @@
     UTILITIES
  *====================*/
 .layout {
-    --padding-inline: .938rem;
+    --padding-inline: .9375rem;
     --content-min-width: calc(100% - var(--padding-inline) * 2);
     --content-max-width: 62.5rem;
 

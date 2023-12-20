@@ -15,7 +15,7 @@
     bottom: -.625rem;
     width: 100%;
     height: 1.25rem;
-    content: '';    
+    content: "";    
 }
 
 .landing {
@@ -31,25 +31,6 @@
     padding-block: 6.25rem;
 }
 
-.primary-main > .layout > .profile {
-    position: relative;
-    display: grid;
-    grid-template-columns: [info-start] 17.5rem [info-end];
-    grid-template-rows: minmax(57.2333px, auto);
-    grid-template-areas: 
-        'info heading'
-        'info paragraph';
-    gap: .938rem;
-}
-
-.primary-main > .layout > .profile::before {
-    grid-row: 1 / 2;
-    position: absolute;
-    inset: -.625rem;
-    z-index: -1;
-    content: '';
-}
-
 .primary-main > .layout > section:not(.gallery) > :not(.button) {
     max-width: 60ch;
 }
@@ -58,9 +39,29 @@
     padding-bottom: 1.25rem;
 }
 
+.profile {
+    --spacer: .9375rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: [info-start] 17.5rem [info-end];
+    grid-template-rows: minmax(57.2333px, auto);
+    grid-template-areas: 
+        "info heading"
+        "info paragraph";
+    gap: var(--spacer);
+}
+
+.profile::before {
+    grid-row: 1 / 2;
+    position: absolute;
+    inset: -.625rem;
+    z-index: -1;
+    content: "";
+}
+
 .profile section > h3,
 .profile section > p:not(:last-of-type) {
-    padding-bottom: .938rem;
+    padding-bottom: var(--spacer);
 }
 
 .profile__title {
@@ -72,7 +73,7 @@
 }
 
 .profile__paragraph > section:not(:last-of-type) {
-    margin-block: .938rem;
+    margin-block: var(--spacer);
 }
 
 .profile__info {
@@ -81,7 +82,7 @@
 
 .profile__info > img {
     width: 100%;    
-    margin-bottom: .938rem;
+    margin-bottom: var(--spacer);
 }
 
 .gallery {
@@ -106,4 +107,15 @@
     object-position: center;
     width: 100%;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    .profile {
+        grid-template-columns: initial;
+        grid-template-rows: initial;
+        grid-template-areas: 
+            "heading"
+            "info"
+            "paragraph";
+    }
 }
