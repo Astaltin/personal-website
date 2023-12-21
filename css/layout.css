@@ -26,20 +26,20 @@
     text-align: center;
 }
 
-.primary-main > .layout {
+.main-content {
     --row-gap: 6.25rem;
     padding-block: var(--row-gap);
 }
 
-.primary-main > .layout > .section-highlight {
+.section-highlight {
     padding-block: 6.25rem;
 }
 
-.primary-main > .layout > section:not(.gallery) > :not(.button) {
+.main-content > section:not(.gallery) > :not(.button) {
     max-width: 60ch;
 }
 
-.primary-main > .layout > section:not(.profile, .gallery) > :not(:last-child) {
+.main-content > section:not(.profile, .gallery) > :not(:last-child) {
     padding-bottom: 1em;
 }
 
