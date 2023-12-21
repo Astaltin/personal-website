@@ -10,6 +10,15 @@
     line-height: 1em;
     text-transform: uppercase;
     color: var(--clr-secondary);
+    transition: 
+        transform 100ms ease-in-out, 
+        box-shadow 100ms ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 .15em .25em .05em #00000080;
+    filter: brightness(85%);
 }
 
 /*====================*
@@ -34,6 +43,14 @@
 .primary-nav > ul > li {
     font-weight: var(--fw-700);
     text-transform: uppercase;
+}
+
+.primary-nav > ul > li > a:not([data-current-link]) {
+    opacity: .5;
+}
+
+.primary-nav > ul > li > a:not([data-current-link]):hover {
+    opacity: .75;
 }
 
 /*====================*
