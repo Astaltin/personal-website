@@ -18,7 +18,7 @@
     background-color: var(--clr-secondary);
 }
 
-.primary-main > .layout > .section-highlight {
+.main-content > .section-highlight {
     background-color: var(--clr-primary);
     color: var(--clr-secondary);
 }
