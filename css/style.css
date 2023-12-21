@@ -45,8 +45,13 @@
     font-style: oblique;
 }
 
-.profile a {
+.profile__info > ul > li > a {
+    width: fit-content;
     text-decoration: underline;
+}
+
+.profile__info > ul > li > a:hover {
+    text-decoration: none;
 }
 
 .gallery {

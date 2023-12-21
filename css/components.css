@@ -83,6 +83,10 @@
     width: fit-content;
 }
 
+.contact-section > ul > li > a:hover {
+    text-decoration: underline;
+}
+
 .copyright-text {
     grid-area: copyright;
     justify-self: flex-end;
