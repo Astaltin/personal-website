@@ -52,7 +52,7 @@
 
 .profile__info > ul > li > a:hover {
     text-decoration: none;
-}
+}   
 
 .gallery {
     border-radius: var(--rounded);
