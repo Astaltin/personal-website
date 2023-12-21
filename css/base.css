@@ -72,7 +72,7 @@ body {
     min-height: 100vh;
     min-height: 100svh;
     background-color: var(--clr-secondary);
-    font: var(--fs-base)/200% var(--ff);
+    font: var(--fs-base)/2em var(--ff);
     text-rendering: optimizeSpeed;
     color: var(--clr-neutral-900);
 }
