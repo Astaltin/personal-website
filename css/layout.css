@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-.primary-main > .layout {
+.main-content {
     --row-gap: 6.25rem;
     padding-block: var(--row-gap);
 }
