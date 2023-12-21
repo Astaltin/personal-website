@@ -37,7 +37,7 @@
     color: var(--clr-neutral-100);
 }
 
-.profile__info > img {
+.profile__image {
     border-radius: var(--rounded);
 }
 
