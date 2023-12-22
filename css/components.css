@@ -46,11 +46,11 @@
 }
 
 .primary-nav > ul > li > a:not([data-current-link]) {
-    opacity: .5;
+    opacity: .4;
 }
 
 .primary-nav > ul > li > a:not([data-current-link]):hover {
-    opacity: .75;
+    opacity: .6;
 }
 
 /*====================*
