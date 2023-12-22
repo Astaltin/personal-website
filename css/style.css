@@ -34,6 +34,7 @@
 
 .profile__image {
     border-radius: var(--rounded);
+    background-color: var(--clr-neutral-500);
 }
 
 .profile__info > ul {
@@ -55,4 +56,5 @@
 
 .gallery > div > img {
     border-radius: var(--rounded);
+    background-color: var(--clr-neutral-500);
 }
